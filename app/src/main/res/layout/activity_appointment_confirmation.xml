@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/overlay"
+    tools:context=".AppointmentConfirmation">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:paddingHorizontal="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/cairo_light"
+                    android:text="Appointment Confirmation"
+                    android:layout_marginVertical="20dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center">
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:gravity="start"
+                                android:paddingHorizontal="5dp"
+                                android:text="Serial No."
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/serialConfText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:paddingHorizontal="5dp"
+                                android:text="serial"
+                                android:textSize="18sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:gravity="start"
+                                android:paddingHorizontal="5dp"
+                                android:text="Time"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/timeConfText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:paddingHorizontal="5dp"
+                                android:text="time"
+                                android:textSize="18sp" />
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:gravity="start"
+                                android:paddingHorizontal="5dp"
+                                android:text="Appointment Date"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/dateConfText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:paddingHorizontal="5dp"
+                                android:text="date"
+                                android:textSize="18sp" />
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:gravity="start"
+                                android:paddingHorizontal="5dp"
+                                android:text="Patient Name"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/nameConfText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:paddingHorizontal="5dp"
+                                android:text="name"
+                                android:textSize="18sp" />
+
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:gravity="start"
+                                android:paddingHorizontal="5dp"
+                                android:text="Age"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/ageConfText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:paddingHorizontal="5dp"
+                                android:text="age"
+                                android:textSize="18sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:gravity="start"
+                                android:paddingHorizontal="5dp"
+                                android:text="Gender"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/genderConfText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:paddingHorizontal="5dp"
+                                android:text="gender"
+                                android:textSize="18sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:gravity="start"
+                                android:paddingHorizontal="5dp"
+                                android:text="Blood Group"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/bloodgroupConfText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:paddingHorizontal="5dp"
+                                android:text="bloodgroup"
+                                android:textSize="18sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:gravity="start"
+                                android:paddingHorizontal="5dp"
+                                android:text="Symptoms"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/symptomsConfText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:paddingHorizontal="5dp"
+                                android:text="symptoms"
+                                android:textSize="18sp" />
+                        </TableRow>
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:gravity="start"
+                                android:paddingHorizontal="5dp"
+                                android:text="Phone"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/phoneConfText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:paddingHorizontal="5dp"
+                                android:text="phone no."
+                                android:textSize="18sp" />
+                        </TableRow>
+
+
+                        <TableRow>
+
+                            <TextView
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:gravity="start"
+                                android:paddingHorizontal="5dp"
+                                android:text="Doctor Name"
+                                android:textSize="18sp" />
+
+                            <TextView
+                                android:id="@+id/doctornameConfText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/cairo_light"
+                                android:paddingHorizontal="5dp"
+                                android:text="doctorname"
+                                android:textSize="18sp" />
+                        </TableRow>
+                    </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:paddingVertical="20dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/confirmAppointment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@color/colorAcceptButton"
+                            android:fontFamily="@font/allerta"
+                            android:text="Confirm"
+                            android:textAllCaps="false"/>
+
+                        <Button
+                            android:id="@+id/cancelAppointment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:background="@color/colorDiscardButton"
+                            android:fontFamily="@font/allerta"
+                            android:text="Cancel"
+                            android:textAllCaps="false"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

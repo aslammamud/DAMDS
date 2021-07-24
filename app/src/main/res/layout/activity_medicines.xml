@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/overlay"
+    android:weightSum="2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Order Medicines"
+        android:textSize="25sp"
+        android:layout_weight=".5"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1.5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:paddingHorizontal="40dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/presView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:visibility="gone"
+            android:layout_marginBottom="10dp"/>
+       <Button
+           android:id="@+id/uploadPrescription"
+           android:layout_width="wrap_content"
+           android:layout_height="55dp"
+           android:layout_gravity="center"
+           android:text="UPLOAD PRESCRIPTION"
+           android:padding="15dp"
+           android:textSize="20sp"
+           android:fontFamily="@font/allerta"
+           android:textColor="@color/colorWhite"
+           android:background="@drawable/gradient"/>
+
+
+        <EditText
+            android:id="@+id/customerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginVertical="20dp"
+            android:hint="Write Recipient Name"
+            android:scrollbars="vertical"
+            android:background="@color/colorWhite"/>
+
+        <EditText
+            android:id="@+id/customerAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp"
+            android:hint="Write Recipient Address"
+            android:scrollbars="vertical"
+            android:background="@color/colorWhite"/>
+
+        <EditText
+            android:id="@+id/orderDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:padding="15dp"
+            android:layout_marginBottom="20dp"
+            android:lines="10"
+            android:maxLines="10"
+            android:minLines="3"
+            android:hint="Write Additional Demands."
+            android:scrollbars="vertical"
+            android:background="@color/colorWhite"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/uploadData"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@color/colorAcceptButton"
+                android:text="Order"
+                android:layout_marginRight="30dp"
+                android:fontFamily="@font/allerta"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/discardUPload"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@color/colorDiscardButton"
+                android:text="Discard"
+                android:fontFamily="@font/allerta"
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/goBackMedicines"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/colorNavigation"
+            android:fontFamily="@font/allerta"
+            android:text="Back"
+            android:textColor="@color/colorCard1"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

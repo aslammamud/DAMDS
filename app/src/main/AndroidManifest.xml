@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.slowcoders.damds">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/applogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/applogo"
+        tools:replace="android:icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Appointment" />
+        <activity android:name=".AppointmentConfirmation" />
+        <activity android:name=".DoctorsListGovt" />
+        <activity android:name=".DoctorsListPrivate" />
+        <activity android:name=".DepartmentsGovt" />
+        <activity android:name=".DepartmentsPrivate" />
+        <activity android:name=".DeliveryList" />
+        <activity android:name=".HospitalsActivity" />
+        <activity android:name=".AppointmentSerialList" />
+        <activity android:name=".MedicinesActivity" />
+        <activity android:name=".ProfileUpdateActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".AdminTrackSerialList" />
+        <activity android:name=".AdminAppointments" />
+        <activity android:name=".AdminDeliveryList" />
+        <activity android:name=".AdminHomeActivity" />
+        <activity android:name=".DoctorHomeActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

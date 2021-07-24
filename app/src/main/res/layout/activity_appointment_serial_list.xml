@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/overlay">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Live Appointment Schedules"
+        android:layout_marginTop="20dp"
+        android:textSize="25sp"
+        android:fontFamily="@font/cairo_light"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/selectAptDate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:hint="Select Apt. Date" />
+        <Button
+            android:id="@+id/appointmentTrackSerial"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Appointments"
+            android:layout_marginHorizontal="10dp"
+            android:background="@color/colorNavigation"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:padding="20dp">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:weightSum="6">
+
+            <TextView
+                android:layout_marginVertical="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Sr."
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_marginVertical="5dp"
+                android:layout_weight="2"
+                android:paddingVertical="5dp"
+                android:fontFamily="@font/allerta"
+                android:paddingStart="10dp"
+                android:text="Apt Serial"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_marginVertical="5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/allerta"
+                android:paddingVertical="5dp"
+                android:text="Time"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_marginVertical="5dp"
+                android:layout_weight="2"
+                android:fontFamily="@font/allerta"
+                android:padding="5dp"
+                android:text="Doctor"
+                android:textSize="12sp" />
+        </TableRow>
+    </TableLayout>
+        <TextView
+            android:id="@+id/noAptShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:fontFamily="@font/cairo_light"
+            android:text="No Appointments"
+            android:gravity="center"
+            android:padding="50dp"
+            android:visibility="gone"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/appointmentSerialRecylcerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/goBackTSerialList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorNavigation"
+        android:fontFamily="@font/allerta"
+        android:text="Back"
+        android:textColor="@color/colorCard1"
+        android:textSize="16sp" />
+</LinearLayout>
